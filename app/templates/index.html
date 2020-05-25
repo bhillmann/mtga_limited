@@ -1,6 +1,57 @@
+<html>
+
+<head>
+    <title>Sealed</title>
+</head>
+
 <body>
-    <form method="post" action="/uploadfile/" enctype="multipart/form-data">
-        <input type="file" id="file_upload" name="file">
-        <input type="submit">
-    </form>
+    <div>
+        <h1>General Instructions:</h1>
+        <p>
+            There are two options for sealed on MTGA since there isn't an in-house official sealed offering yet. For both options,
+        you will need to purchase 12 packs of Ikoria. In a paper Magic sealed, sealed you get 6 packs with each pack containing
+        15 cards for a total of a 90 card pool. In MTGA, you get only 8 cards per pack, so we will be opening 12 packs for a total
+        of 96 cards in your pool of available cards. You will also get 12 rares and 24 uncommons, which will increase the power
+        level of your deck substantially. Furthremore, there are wild cards in MTGA. For our purposes, the best option for wild cards
+        is to let you use them as you see fit. The other options weren't as much fun. May the odds ever be in your favor for opening
+         many Mythic wildcards.
+        </p>
+
+        <p>
+            There is no option in MTGA to show you only recently opened cards in your collection. For that reason, we are specifying the
+         sealed procedure here. There is a technical and non-technical version of keeping track of your booster cards. We are using
+         the honor system and you will forever be hated and laughed at if you cheat. Finally, we will be challenging each other directly
+         with the built in systems. Make sure to tell us your username in the discord channel.
+        </p>
+
+        <h1>Doing the sealed (non-technical)</h1>
+        <ol>
+            <li>For the non-technical audience, you will have to screen capture (either with a video, a screenshot
+         a picture on your phone, writing them down, etc) each pack that you open</li>
+            <li>Use the built deck creater to build a 40 card minimum limited deck</li>
+            <li>Profit!</li>
+        </ol>
+
+        <h1>Doing the sealed (technical) video walk through posted on Facebook and the discord channel</h1>
+        <ol>
+            <li>Enable verbose logging in MTGA</li>
+            <li>Sign into MTGA</li>
+            <li>Go to the COG in the upper right, click Account, and click the checkbox by Detailed Logs</li>
+            <li>Sign out and back into MTGA</li>
+            <li>Open <strong>only</strong> your 12 packs for the sealed draft (screen capturing in case something goes wrong) <strong>Do not use your wildcards</strong>, the website will display a total count by rarity. Close MTGA.</li>
+            <li>Locate the player log file that is typically found at C:\Users\%username%\AppData\LocalLow\Wizards Of The Coast\MTGA\Player.log</li>
+            <li>Upload the the log file to https:\\mtga.artificialeloquence.com</li>
+            <li>Copy the "Decklist" and paste it into your favorite deck builder, for example, manavault.com</li>
+            <li>After building your 40 card deck, export the decklist and upload it into MTGA through your clipboard. This can be done in MTGA through Collection\+\import from clipboard.</li>
+            <li>Profit!</li>
+        </ol>
+    </div>
+    <div>
+        <form method="post" action="/uploadfile/" enctype="multipart/form-data">
+            <input type="file" id="file_upload" name="file">
+            <input type="submit">
+        </form>
+    </div>
 </body>
+
+</html>
