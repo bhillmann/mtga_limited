@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Item Details</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+   <h1>Decklist:</h1>
+   <p>
+   {% for key, value in c_card_ids.items() %}
+   <pre><span>{{value}} {{key}}</span></pre>
+   {% endfor %}
+   </p>
+   <h1>Wildcards:</h1>
+   <p>
+     {% for key, value in c_wild_cards.items() %}
+     <pre><span>{{value}} {{key}}</span></pre>
+   {% endfor %}
+   </p>
+</body>
+</html>
