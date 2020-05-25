@@ -11,6 +11,6 @@ COPY . /app
 # Here is the production image
 FROM python:3.8.0-slim as app
 COPY --from=builder /root/.local /root/.local
-COPY --from=builder /app/app/main.py /app/main.py
+COPY --from=builder /app/app /app
 WORKDIR app
 ENV PATH=/root/.local/bin:$PATH
